@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table</title>
+</head>
+<body>
+	<table border=1>
+		<tr>
+			<th>S.no</th>
+			<th>name</th>
+			<th>branch</th>
+			<th>dept</th>
+
+		</tr>
+		{% for i in dummy_data %} 
+		<tr>
+			<td>{{i.sno}}</td>
+			<td>{{i.name}}</td>
+			<td>{{i.branch}}</td>
+			<td>{{i.dept}}</td>
+		</tr>
+	    {% endfor %}
+
+	</table>
+
+</body>
+</html>	

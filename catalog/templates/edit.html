@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>edit data</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form action="{{url_for('editData',register_id=register.id)}}" method="post">
+	<div class="control-label col-sm-5">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr" name="name" placeholder="enter your name" value="{{register.name}}">
+    </div>
+    <div class="control-label col-sm-5">
+      <label for="pwd">surname</label>
+      <input type="text" class="form-control" id="surname" name="surname"  placeholder="enter your surname" value="{{register.surname}}">
+    </div>
+    <div class="control-label col-sm-5">
+      <label for="usr">mobile</label>
+      <input type="text" class="form-control" id="usr" name="mobile"  placeholder="enter your mobile" value="{{register.mobile}}">
+    </div>
+    <div class="control-label col-sm-5">
+      <label for="usr">email</label>
+      <input type="text" class="form-control" id="usr" name="email"  placeholder="enter your email" value="{{register.email}}">
+    </div>
+    <div class="control-label col-sm-5">
+      <label for="usr">branch</label>
+      <input type="text" class="form-control" id="usr" name="branch"  placeholder="enter your branch" value="{{register.branch}}">
+    </div>
+    <div class="control-label col-sm-5">
+      <label for="usr">role</label>
+      <input type="text" class="form-control" id="usr" name="role"  placeholder="enter your role" value="{{register.role}}">
+      <br>
+      <button type="SUBMIT" class="btn btn-default" >SUBMIT</button>
+      <button type="button" class="btn btn-default" ><a href="{{url_for('showData')}}">CANCEL</a></button>
+    </div>
+</form>
+</body>
+</html>
